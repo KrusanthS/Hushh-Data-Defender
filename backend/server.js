@@ -21,7 +21,7 @@ app.use('/api', apiRoutes);
 app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 // Serve index.html for any other requests (React Router)
-app.get('*', (req, res) => {
+app.get('*all', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
 });
 
