@@ -1,0 +1,113 @@
+:root {
+  --bg-color: #0d0d0d;
+  --card-bg: #1a1a1a;
+  --text-color: #e0e0e0;
+  --primary-neon: #00f2ff;
+  --secondary-neon: #00ff88;
+  --risk-low: #00ff88;
+  --risk-medium: #ffcc00;
+  --risk-high: #ff4d4d;
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: var(--transition);
+}
+
+.glass-card:hover {
+  border-color: var(--primary-neon);
+  transform: translateY(-5px);
+}
+
+.neon-btn {
+  background: transparent;
+  color: var(--primary-neon);
+  border: 1px solid var(--primary-neon);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.neon-btn:hover {
+  background: var(--primary-neon);
+  color: var(--bg-color);
+  box-shadow: 0 0 15px var(--primary-neon);
+}
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --nav-height: 70px;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    
+    .glass-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.75rem; }
+    .neon-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.neon-title {
+  color: var(--primary-neon);
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+}

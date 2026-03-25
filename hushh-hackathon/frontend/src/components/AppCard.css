@@ -1,0 +1,33 @@
+.app-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.app-card:hover {
+    transform: scale(1.02);
+    border-color: var(--primary-neon);
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app-body {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.status-active {
+    color: var(--risk-low);
+}
+
+.status-expired {
+    color: var(--risk-high);
+}

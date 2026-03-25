@@ -1,0 +1,25 @@
+.risk-badge {
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.risk-low {
+    background: rgba(0, 255, 136, 0.1);
+    color: var(--risk-low);
+    border: 1px solid var(--risk-low);
+}
+
+.risk-medium {
+    background: rgba(255, 204, 0, 0.1);
+    color: var(--risk-medium);
+    border: 1px solid var(--risk-medium);
+}
+
+.risk-high {
+    background: rgba(255, 77, 77, 0.1);
+    color: var(--risk-high);
+    border: 1px solid var(--risk-high);
+}

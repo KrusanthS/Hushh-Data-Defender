@@ -1,0 +1,61 @@
+.consent-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+
+.consent-card {
+    max-width: 600px;
+    width: 100%;
+}
+
+.consent-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.consent-header h2 {
+    color: var(--primary-neon);
+    margin-bottom: 0.5rem;
+}
+
+.nutrition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nutrition-item label {
+    display: block;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-bottom: 0.2rem;
+}
+
+.nutrition-item p {
+    font-weight: 500;
+}
+
+.consent-actions {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.reject-btn {
+    border-color: var(--risk-high);
+    color: var(--risk-high);
+}
+
+.reject-btn:hover {
+    background: var(--risk-high);
+    box-shadow: 0 0 15px var(--risk-high);
+}
+
+.accept-btn {
+    flex-grow: 1;
+}

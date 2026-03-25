@@ -1,0 +1,78 @@
+.share-data-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+
+.share-card {
+    max-width: 600px;
+    width: 100%;
+}
+
+.share-card h2 {
+    color: var(--primary-neon);
+    margin-bottom: 0.5rem;
+}
+
+.share-details {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.risk-explanation h4 {
+    margin-bottom: 0.5rem;
+}
+
+.risk-text-high { color: var(--risk-high); }
+.risk-text-medium { color: var(--risk-medium); }
+.risk-text-low { color: var(--risk-low); }
+
+.share-option label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.share-option select {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--bg-color);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.toggle-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtext {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+.toggle-option input {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-neon);
+}
+
+.share-actions {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.back-btn {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.confirm-btn {
+    flex-grow: 1;
+}

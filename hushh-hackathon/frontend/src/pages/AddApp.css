@@ -1,0 +1,43 @@
+.add-app-page {
+    padding-top: 2rem;
+}
+
+.device-apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.device-app-card {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.risk-indicator {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.risk-indicator.high { background: rgba(255, 68, 68, 0.2); color: var(--risk-high); border: 1px solid var(--risk-high); }
+.risk-indicator.medium { background: rgba(255, 187, 51, 0.2); color: var(--risk-medium); border: 1px solid var(--risk-medium); }
+.risk-indicator.low { background: rgba(0, 200, 81, 0.2); color: var(--risk-low); border: 1px solid var(--risk-low); }
+
+.app-data-preview {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.device-app-card button {
+    margin-top: auto;
+}

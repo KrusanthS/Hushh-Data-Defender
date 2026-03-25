@@ -1,0 +1,44 @@
+.login-page {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #1a1a1a 0%, #0d0d0d 100%);
+}
+
+.login-content {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    padding: 3rem;
+}
+
+.login-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.login-content p {
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.login-features {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.feature {
+    flex: 1;
+}
+
+.feature span {
+    font-size: 1.5rem;
+}
+
+.feature p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,39 @@
+.feedback-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+}
+
+.feedback-card {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.feedback-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1;
+    margin: 0 0.5rem;
+}
+
+.stat-card h3 {
+    color: var(--primary-neon);
+    font-size: 2rem;
+}
+
+.feedback-message {
+    background: rgba(0, 255, 136, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--risk-low);
+}

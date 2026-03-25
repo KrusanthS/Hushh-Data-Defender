@@ -1,0 +1,289 @@
+.safe-share-page {
+    padding-top: 2rem;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.safe-share-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 5px solid var(--risk-low);
+    background: rgba(0, 255, 136, 0.05);
+}
+
+.lock-icon {
+    font-size: 2.5rem;
+    background: rgba(0, 255, 136, 0.1);
+    color: var(--risk-low);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.header-text h3 {
+    color: var(--risk-low);
+    margin-bottom: 0.25rem;
+}
+
+.header-text p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    max-width: 800px;
+}
+
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-card label {
+    font-size: 0.75rem;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.stat-main {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2rem;
+}
+
+.stat-value {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.stat-max {
+    font-size: 1.2rem;
+    opacity: 0.4;
+}
+
+.stat-card .stat-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.stat-card .stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-card .stat-content .stat-value {
+    font-size: 2.5rem;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.encryption-tag {
+    font-size: 0.75rem;
+    background: rgba(0, 242, 255, 0.1);
+    color: var(--primary-neon);
+    padding: 0.3rem 0.8rem;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 242, 255, 0.2);
+}
+
+.passport-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.passport-card {
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.passport-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.app-brand {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.app-icon-mini {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.app-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.data-tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.data-tag {
+    font-size: 0.7rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    opacity: 0.8;
+}
+
+.passport-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.sensitivity-tag {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 30px;
+}
+.sensitivity-tag.low { background: rgba(0, 255, 136, 0.1); color: var(--risk-low); }
+.sensitivity-tag.medium { background: rgba(255, 165, 0, 0.1); color: var(--risk-medium); }
+.sensitivity-tag.high { background: rgba(255, 68, 68, 0.1); color: var(--risk-high); }
+
+.duration-tag {
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+.passport-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.passport-footer {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.revoke-btn {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.revoke-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.4);
+}
+
+.audit-card {
+    padding: 2rem;
+}
+
+.audit-intro {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-bottom: 2rem;
+}
+
+.audit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.audit-item {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.audit-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.granted .audit-dot { background: var(--risk-low); }
+.revoked .audit-dot { background: var(--risk-high); }
+
+.plain-english-summary {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
+.revocation-success-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(15, 23, 42, 0.95);
+    border: 2px solid var(--risk-high);
+    padding: 3rem;
+    text-align: center;
+    z-index: 100;
+    width: 80%;
+    max-width: 400px;
+}
+
+.revocation-success-overlay h4 {
+    color: var(--risk-high);
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.passport-list {
+    position: relative;
+}
+
+.audit-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.audit-info strong { font-size: 0.9rem; }
+.audit-info .app-name { font-size: 0.85rem; opacity: 0.8; }
+.audit-info .time-ago { font-size: 0.7rem; opacity: 0.5; margin-top: 0.25rem; }
+
+@media (max-width: 1000px) {
+    .content-grid { grid-template-columns: 1fr; }
+    .stats-row { grid-template-columns: 1fr; }
+}
